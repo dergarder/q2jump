@@ -1,6 +1,7 @@
 # makefile for jump
 
-ARCH=i386
+#ARCH=i386
+ARCH=x86_64
 CC=gcc
 BASE_CFLAGS=-Dstricmp=strcasecmp -DQ_strncasecmp=strncasecmp
 
