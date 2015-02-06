@@ -127,15 +127,15 @@ build/%.o: %.c
 else
 game:
 	@echo "===> Building game.so"
-	$(Q)mkdir -p release
-	$(MAKE) release/game.so
+	#$(Q)mkdir -p release
+	$(MAKE) game.so
 
 build/%.o: %.c
 	@echo "===> CC $<"
 	$(Q)mkdir -p $(@D)
 	$(Q)$(CC) -c $(CFLAGS) -o $@ $<
 
-release/game.so : CFLAGS += -fPIC
+game.so : CFLAGS += -fPIC
 endif
  
 # ----------
